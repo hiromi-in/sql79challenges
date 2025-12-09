@@ -1,6 +1,4 @@
-## Google (Medium Level) hashtag#SQL Interview Question — Solution
-
-
+## Google (Medium Level) hashtag#SQL Interview Question 
 
 
 
@@ -43,4 +41,5 @@ After looking at the answer, I realized that with CTE the command gets way simpl
 2nd attempt is confusing as I need to rename a column from friend\_id to user\_id.  
 
 Hence the 3rd attempt, which I do not need to change the column name and filtering rows out by joining karl and hans tables.
+
 
