@@ -1,8 +1,7 @@
 
-## Amazon (Hard Level) hashtag#SQL Interview Question — Solution
-  
+## Amazon (Hard Level) hashtag#SQL Interview Question   
 
-Given a table 'sf_transactions' of purchases by date, calculate the month-over-month percentage change in revenue. 
+  Given a table 'sf_transactions' of purchases by date, calculate the month-over-month percentage change in revenue. 
 The output should include the year-month date (YYYY-MM) and percentage change, rounded to the 2nd decimal point, and sorted from the beginning of the year to the end of the year. 
 The percentage change column will be populated from the 2nd month forward and calculated as ((this month’s revenue — last month’s revenue) / last month’s revenue)*100.
 
@@ -18,4 +17,5 @@ INSERT INTO sf_transactions VALUES
 ### Comment:  
 How to get the previous month revenue is the key for this question.  
 FORMAT function accepts capital Ms for months. Small thing like that could cause a bug so.  
+
 I wanted to create a variable for LAG(monthly_revenue, 1) OVER (ORDER BY year_month) but it did not work.
