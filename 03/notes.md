@@ -10,7 +10,6 @@ The output should contain 'user\_id' and 'user\_name' columns.
 
 &nbsp;   
 
-&nbsp; 
 
 ### 𝐒𝐜𝐡𝐞𝐦𝐚 𝐚𝐧𝐝 𝐃𝐚𝐭𝐚𝐬𝐞𝐭:
 
@@ -41,5 +40,6 @@ After looking at the answer, I realized that with CTE the command gets way simpl
 2nd attempt is confusing as I need to rename a column from friend\_id to user\_id.  
 
 Hence the 3rd attempt, which I do not need to change the column name and filtering rows out by joining karl and hans tables.
+
 
 
