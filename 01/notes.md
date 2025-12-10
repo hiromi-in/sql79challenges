@@ -19,3 +19,4 @@ Need to get distinct value after combining user_id and follower_id. UNION remove
 
 Also need to multiply the result with 100 to get percentage, which is asked for.
 
+
