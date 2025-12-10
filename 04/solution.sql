@@ -13,7 +13,7 @@ GROUP BY FORMAT(DATEADD(MONTH, 1, CAST(request_date as date)), 'yyyy-MM')
 
 SELECT ROUND(sqrt(avg(square((a_distance_per_dollar - f_distance_per_dollar)))),2) AS RMSE
 FROM actual a
-LEFT JOIN forecast f ON a.a_year_month = f.f_year_month
+JOIN forecast f ON a.a_year_month = f.f_year_month
 
 
 --With LAG approach
@@ -29,4 +29,5 @@ FROM actual
 
 SELECT ROUND(sqrt(avg(square((a_distance_per_dollar - forecasted_value)))),2) AS RMSE
 FROM forecast
+
 WHERE forecasted_value IS NOT NULL
